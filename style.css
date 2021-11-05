@@ -18,6 +18,248 @@
 
     /* font familiy */
     --font-poppins : "Poppins", 'sans-serif';
+
+    /* gradient colors */
+    --bg-gradient : linear-gradient(to right, #ff512f, #dd2476); 
+    --bg-gradient-indigo: linear-gradient(to right, #8e2de2, #4a00e0);
+    --bg-gradient-peach: linear-gradient(to right, #fff7f3, #fff7f3);
+
+    /* images */
+    --bg-cover : url('./assets/bgimg1.png');
+    --bg-image1: url('./assets/img1.png');
+    --bg-image2: url('./assets/img2.png');
+    --bg-image3: url('./assets/img3.png');
 }
 
+* > * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
 /* ------------------- /Variables ------------------------ */
+
+/* ------------------- Global Classes ------------------------ */
+
+.text-dark{
+    color: var(--text-dark);
+}
+
+.text-white{
+    color: var(--text-white);
+}
+
+.text-light{
+    color: var(--text-light);
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+.text-red{
+    color: var(--text-red);
+}
+
+.bg-gradient{
+    background: var(--bg-gradient);
+}
+
+.bg-gradient-indigo{
+    background: var(--bg-gradient-indigo);
+}
+
+.bg-gradient-peach{
+    background: var(--bg-gradient-peach);
+}
+
+.bg-gradient-red{
+    background: var(--bg-red);
+}
+
+.bg-gradient-blue{
+    background: var(--bg-blue);
+}
+
+.bg-gradient-yellow{
+    background: var(--bg-yellow);
+}
+
+.bg-gradient-purple{
+    background: var(--bg-purple);
+}
+
+.font-poppins{
+    font-family: var(--font-poppins);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-sm{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.text-md{
+    font-size: 1.5em;
+}
+
+.text-lg{
+    font-size: 2.2em;
+    line-height: 3rem;
+}
+
+.text-xl{
+    font-size: 3em;
+}
+
+.text-2xl{
+    font-size: 5em;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-initial{
+    flex: 0 1 auto;
+}
+
+.flex-grow{
+    flex-grow: 1;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.container{
+    width: 100%;
+}
+
+.container-fluid{
+    width: 98%;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.py-2{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.py-5{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.py-10{
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+
+.px-5{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.px-10{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+.link{
+    color: var(--text-dark2);
+    font-weight: bold;
+}
+
+.link:hover{
+    color: var(--text-red);
+}
+
+.btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-primary{
+    padding: .8rem 2rem;
+    border-radius: 50px;
+    font-family: var(--font-poppins);
+    font-weight: bold;
+}
+
+.btn-shodow{
+    box-shadow: var(--box-shadow);
+}
+
+.btn-primary:hover{
+    background: var(--bg-gradient-indigo);
+}
+
+.bg-cover{
+    background: var(--bg-cover);
+    object-fit: fill;
+}
+
+.d-iniine{
+    display: inline-block;
+}
+
+.d-block{
+    display: block;
+}
+
+.grid{
+    display: grid;
+}
+
+.cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+
+/* ------------------- /Global Classes ------------------------ */
