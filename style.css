@@ -497,3 +497,12 @@ ul{
 }
 
 /* ------------------- /Counting area Style ------------------------ */
+
+/* ------------------- Card area Style ------------------------ */
+#site-main .card-area .grid{
+    column-gap: 4em;
+    row-gap: 2em;
+}
+/* ------------------- /Card area Style ------------------------ */
+
+
