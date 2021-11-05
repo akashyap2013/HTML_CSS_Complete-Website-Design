@@ -286,6 +286,10 @@ ul{
     .md-text-left{
         text-align: left;
     }
+
+    .md-mx-initial{
+        margin: initial;
+    }
 }
 
 /* for large screen lg (1024px) */
@@ -461,3 +465,35 @@ ul{
 }
 
 /* ------------------- /digital life area Style ------------------------ */
+
+/* ------------------- Counting area Style ------------------------ */
+#site-main .counting-area{
+    padding: 7em 0;
+}
+
+#site-main .counting-area .grid-one p{
+    width: 80%;
+}
+
+#site-main .counting-area .count-box{
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+#site-main .counting-area .count-box .grid{
+    display: inline-grid;
+    grid-gap: 2px;
+    border-radius: 20px;
+    background-color: var(--text-light);
+    box-shadow: var(--box-shadow);
+}
+
+
+#site-main .counting-area .count-box .grid > div{
+    background-color: white;
+    padding: 2em 2.5em;
+    text-align: center;
+}
+
+/* ------------------- /Counting area Style ------------------------ */
