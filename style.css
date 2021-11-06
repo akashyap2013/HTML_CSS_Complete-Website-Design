@@ -545,4 +545,12 @@ ul{
 
 /* ------------------- /Card area Style ------------------------ */
 
+/* ------------------- Ready area Style ------------------------ */
+#site-main .ready-area .flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* ------------------- /Ready area Style ------------------------ */
+
 
