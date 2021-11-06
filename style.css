@@ -554,3 +554,45 @@ ul{
 /* ------------------- /Ready area Style ------------------------ */
 
 
+
+/* ------------------- Footer Style ------------------------ */
+#footer{
+    border-top: 2px solid var(--text-light);
+    margin-top: 8em;
+}
+
+#footer .grid{
+    column-gap: 3em;
+    padding: 6em 0;
+    border-bottom: 2px solid var(--text-light);
+}
+
+#footer .grid input.subscribe-text{
+    border: none;
+    background-color: var(--text-light);
+    padding: 1em;
+    font-size: 1em;
+    color: var(--text-dark2);
+    font-family: var(--font-poppins);
+}
+
+#footer .grid input.subscribe-text:focus{
+    border: none;
+    outline: none;
+}
+
+
+#footer .grid button.btn-go{
+    background-color: var(--text-light);
+    padding: 0 2em;
+    font-family: var(--font-poppins);
+}
+
+#footer .grid button.btn-go:hover{
+    background-color: var(--text-dark2);
+    color: var(--text-white);
+}
+
+/* ------------------- /Footer Style ------------------------ */
+
+
