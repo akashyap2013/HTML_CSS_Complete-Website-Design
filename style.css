@@ -261,6 +261,9 @@ ul{
     width: 50%;
 }
 
+.btn-shadow{
+    box-shadow: var(--box-shadow);
+}
 
 /* ------------------- /Global Classes ------------------------ */
 
@@ -274,6 +277,11 @@ ul{
 
     .sm-text-xl{
         font-size: 3em;
+    }
+
+    .sm-px-10{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
     }
 }
 
@@ -289,6 +297,10 @@ ul{
 
     .md-mx-initial{
         margin: initial;
+    }
+
+    .md-cols-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
@@ -324,6 +336,10 @@ ul{
 
     .lg-cols-3{
         grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .lg-cols-4{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
 }
@@ -516,4 +532,17 @@ ul{
 }
 
 /* ------------------- /recent work area Style ------------------------ */
+
+
+/* ------------------- Card area Style ------------------------ */
+#site-main .article-area .grid{
+    column-gap: 5em;
+}
+
+#site-main .article-area .card article{
+    border-radius: 10px;
+}
+
+/* ------------------- /Card area Style ------------------------ */
+
 
