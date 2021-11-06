@@ -265,6 +265,12 @@ ul{
     box-shadow: var(--box-shadow);
 }
 
+body{
+    width: 100%;
+    background: url('./assets/backgroundpng.png') no-repeat;
+    background-size: cover;
+}
+
 /* ------------------- /Global Classes ------------------------ */
 
 /* ------------------- Media Query ------------------------ */
@@ -316,6 +322,8 @@ ul{
 
     #nav{
         flex-direction: row !important;
+        padding-left: 6rem !important;
+        padding-right: 6rem !important;
     }
 
     .collapse{
