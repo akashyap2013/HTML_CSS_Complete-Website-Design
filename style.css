@@ -308,6 +308,11 @@ body{
     .md-cols-2{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .md-text-dark{
+        color: var(--text-dark2);
+    }
+
 }
 
 /* for large screen lg (1024px) */

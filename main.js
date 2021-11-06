@@ -22,3 +22,8 @@ window.onload = function digital_fn(){
     })
 
 }
+
+// rellax js code
+var rellax = new Rellax('.rellax', {
+    center : true
+})
