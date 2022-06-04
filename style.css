@@ -262,136 +262,145 @@ ul{
 }
 
 
+
 /* ------------------- /Global Classes ------------------------ */
 
 /* ------------------- Media Query ------------------------ */
 
-/* for large screen sm (640px) */
-@media (min-width: 640px) {
-    .container{
-        max-width: 640px;
+    /* for large screen sm (640px) */
+
+    @media (min-width: 640px) {
+        .container {
+            max-width: 640px;
+        } 
+        
+        .sm-text-xl {
+            font-size: 3em;
+        }
     }
 
-    .sm-text-xl{
-        font-size: 3em;
-    }
-}
+    /* for large screen md (768px) */
 
-/* for large screen md (768px) */
-@media (min-width: 768px) {
-    .container{
-        max-width: 768px;
-    }
-}
-
-/* for large screen lg (1024px) */
-@media (min-width: 1024px) {
-    .container{
-        max-width: 1024px;
+    @media (min-width: 768px) {
+        .container {
+            max-width: 768px;
+        }
     }
 
-    #nav .toggle-btn > button{
+    /* for large screen lg (1024px) */
+
+    @media (min-width: 1024px) {
+        .container {
+            max-width: 1024px;
+        }
+
+        #nav .toggle-btn > button {
+            display: none;
+        }
+
+        #nav {
+            flex-direction: row !important;
+        }
+
+        .collapse {
+            max-height: initial !important;
+        }
+
+        .collapse ul {
+            flex-direction: row !important;
+        }
+
+        .active {
+            max-height: 100% !important;
+        }
+
+
+    }
+
+    /* for large screen xl (1280px) */
+
+    @media (min-width: 1280px) {
+        .container {
+            max-width: 1280px;
+        }
+
+        #nav {
+            background: transparent !important;
+        }
+
+        #nav .flex-initial ul button {
+            display: inline-block !important;
+        }
+    }
+/* ------------------- Media Query ------------------------ */
+
+/* ------------------- Navigation ------------------------ */
+
+    #nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem 1.5rem;
+        background: var(--text-light);
+        flex-direction: column;;
+    }
+    
+
+    #nav .collapse {
+        max-height: 0px;
+        overflow-y: hidden;
+        transition: all 0.9s ease;
+    }
+
+    #nav .collapse ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0.3rem;
+    }
+
+    #nav .collapse ul > li {
+        padding: 0 1.5rem;
+        line-height: 3rem;
+        font-size: 1.1em;
+    }
+
+    #nav .toggle-btn > button {
+        font-size: 2em;
+        position: absolute;
+        right: 0;top: 0;
+        padding: 1rem;
+        color: var(--text-dark2);
+
+    }
+
+    #nav .flex-initial ul button {
         display: none;
     }
 
-    #nav{
-        flex-direction: row !important;
+    .active {
+        max-height: 50vh!important;
+    } 
+
+
+
+
+/* ------------------- /Navigation ------------------------ */
+
+/* ------------------- Banner Area ------------------------ */
+
+    #site-main .banner-area {
+        width: 100%;
+        position: relative;
+        background: var(--bg-cover) no-repeat;
+        background-position-x: right;
+        z-index: -99;
+        
     }
 
-    .collapse{
-        max-height: initial !important;
-    }
+    #site-main .banner-area .banner-title {
+        height: 95vh;
+        padding-top: 16rem;
+    } 
 
-    .collapse ul{
-        flex-direction: row !important;
-    }
-
-    .active{
-        max-height: 100% !important;
-    }
-
-}
-
-/* for large screen xl (1280px) */
-@media (min-width: 1280px) {
-    .container{
-        max-width: 1280px;
-    }
-
-    #nav{
-        background: transparent !important;
-    }
-
-    #nav .flex-initial ul button{
-        display: inline-block !important;
-    }
-
-}
-
-/* ------------------- /Media Query ------------------------ */
-
-
-/* ------------------- Navigation Style ------------------------ */
-#nav{
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    padding: 1rem 1.5rem;
-    background: var(--text-light);
-    flex-direction: column;
-}
-
-#nav .collapse{
-    max-height: 0px;
-    overflow-y: hidden;
-    transition: all 0.9s ease;
-}
-
-#nav .collapse ul{
-    flex-direction: column;
-    text-align: center;
-    padding: 0 3rem;
-}
-
-#nav .collapse ul > li{
-   padding: 0 1.5rem;
-   line-height: 3rem;
-   font-size: 1.1em;
-}
-
-#nav .toggle-btn > button{
-    font-size: 2em;
-    position: absolute;
-    right: 0; top: 0;
-    padding: 1rem;
-    color: var(--text-dark2);
-}
-
-#nav .flex-initial ul button{
-    display: none;
-}
-
-.active{
-    max-height: 50vh !important;
-}
-
-
-/* ------------------- /Navigation Style ------------------------ */
-
-
-/* ------------------- Banner area Style ------------------------ */
-
-#site-main .banner-area{
-    width: 100%;
-    position: relative;
-    background: var(--bg-cover) no-repeat;
-    background-position-x: right;
-    z-index: -99;
-}
-
-#site-main .banner-area .banner-title{
-    height: 95vh;
-    padding-top: 16rem;
-}
-
-/* ------------------- /Banner area Style ------------------------ */
+/* ------------------- Banner Area ------------------------ */
